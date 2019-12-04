@@ -6,7 +6,7 @@ export default Route.extend({
   model() {
 
     // twitch
-    const client    = '69l6o7bwqkhjudkhdu8fl76vo1hz5d'
+    const client    = '9f7kgf00epub83w053hmom3it010kn'
     // const twitchURL = 'https://api.twitch.tv/helix/users?login=mymisterfruit'
     const twitchURL = 'https://api.twitch.tv/helix/users/follows?to_id=56001630'
 
