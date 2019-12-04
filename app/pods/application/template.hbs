@@ -1,5 +1,52 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-<WelcomePage />
-{{!-- Feel free to remove this! --}}
+<section>
+  <header>
+    <img class="banner" src="/assets/images/banner.jpg" alt="Mr Fruit Banner">
+    <img class="logo" src="/assets/images/logo.png" alt="Mr Fruit Logo">
+  </header>
 
-{{outlet}}
+  <nav>
+    <a class="youtube" href="https://www.youtube.com/user/MyMisterFruit">
+      YouTube
+      {{#if this.model.youtube}}
+        <div class="followers">
+          {{number-shortener this.model.youtube}}
+        </div>
+      {{/if}}
+    </a>
+
+    <a class="twitter" href="https://www.twitter.com/MrFruitYT">
+      Twitter
+      {{#if this.model.twitter}}
+        <div class="followers">
+          {{number-shortener this.model.twitter}}
+        </div>
+      {{/if}}
+    </a>
+
+    <a class="twitch" href="https://www.twitch.tv/mymisterfruit">
+      Twitch
+      {{#if this.model.twitch}}
+        <div class="followers">
+          {{number-shortener this.model.twitch}}
+        </div>
+      {{/if}}
+    </a>
+
+    <a class="instagram" href="https://instagram.com/mrfruitgaming/">
+      Instagram
+    </a>
+
+    <a class="discord" href="https://discordapp.com/invite/UkfhStU">
+      Discord
+    </a>
+  </nav>
+
+  <a class="ad" href="https://advanced.gg/MrFruit">
+    <img src="/assets/images/sponsor.png" alt="Sponsor">
+  </a>
+
+  <footer>
+    Lovingly created by
+    <a href="https://turtleguyy.com/" target="_blank" rel="noopener">@turtleguyy</a> for the fruitiest man I know.
+  </footer>
+</section>
