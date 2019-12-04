@@ -3,6 +3,7 @@
 module.exports = function(environment) {
   let ENV = {
     modulePrefix: 'mrfruit',
+    podModulePrefix: 'mrfruit/pods',
     environment,
     rootURL: '/',
     locationType: 'auto',
